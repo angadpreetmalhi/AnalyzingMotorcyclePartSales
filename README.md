@@ -16,4 +16,18 @@ The analysis was performed using the data from the `sales` table, which contains
 - `payment`: Payment method (Credit card, Transfer, Cash).
 - `payment_fee`: Percentage of total charged as a result of the payment method.
 
+```sql
+SELECT 
+    product_line,
+    TO_CHAR(date, 'Month') AS month,
+    warehouse,
+    (SUM(total) - SUM(payment_fee)) AS net_revenue
+FROM 
+    sales
+WHERE 
+    client_type = 'Wholesale'
+GROUP BY 
+    product_line, month, warehouse
+ORDER BY 
+    product_line, month, net_revenue DESC;
 
