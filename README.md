@@ -2,11 +2,6 @@
 
 This repository contains SQL queries for analyzing the sales data of a company selling motorcycle parts. The goal is to calculate the net revenue for each product line, grouped by month and warehouse, filtered to include only "Wholesale" orders.
 
-## SQL Queries
-
-The SQL queries used in this analysis can be found in the `sql/`query.
-
-
 ## Analysis
 
 The analysis was performed using the data from the `sales` table, which contains the following columns:
