@@ -1,15 +1,11 @@
 # AnalyzingMotorcyclePartSales
-# Unicorns Analysis
 
-This repository contains SQL queries and Python visualizations for analyzing the sales data of a company selling motorcycle parts. The goal is to calculate the net revenue for each product line, grouped by month and warehouse, filtered to include only "Wholesale" orders.
+This repository contains SQL queries for analyzing the sales data of a company selling motorcycle parts. The goal is to calculate the net revenue for each product line, grouped by month and warehouse, filtered to include only "Wholesale" orders.
 
 ## SQL Queries
 
-The SQL queries used in this analysis can be found in the `sql/` directory.
+The SQL queries used in this analysis can be found in the `sql/`query.
 
-## Visualizations
-
-The visualizations generated from the analysis can be found in the `visualizations/` directory.
 
 ## Analysis
 
@@ -25,7 +21,4 @@ The analysis was performed using the data from the `sales` table, which contains
 - `payment`: Payment method (Credit card, Transfer, Cash).
 - `payment_fee`: Percentage of total charged as a result of the payment method.
 
-## Running the Analysis
-
-To run the analysis and generate the visualizations, open the `unicorns_analysis.ipynb` Jupyter notebook and execute the cells.
 
